@@ -10,19 +10,20 @@ import androidx.annotation.Nullable;
 public class MyDB extends SQLiteOpenHelper {
 
     public MyDB(Context context) {
-        super(context, "school", null, 1);
+        super(context, "school", null, 2);
     }
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL("Create table student(id INTEGER primary key autoincrement," +
-                " name TEXT not null,age INTEGER);");
+                " name TEXT not null,age INTEGER,username TEXT unique not null,password TEXT not null);");
 
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-            sqLiteDatabase.execSQL("Alter table student add column(status INTEGER);");
+            sqLiteDatabase.execSQL("Alter table student add column username TEXT not null;");
+            sqLiteDatabase.execSQL("Alter table student add column password TEXT not null;");
     }
 
 

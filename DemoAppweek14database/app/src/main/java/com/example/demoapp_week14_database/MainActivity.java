@@ -25,6 +25,22 @@ public class MainActivity extends AppCompatActivity {
         EditText nameEdit = findViewById(R.id.edit_name);
         EditText editAge = findViewById(R.id.edit_age);
         Button addButton = findViewById(R.id.btn_insert);
+
+//
+//        MyDB myDB1 = new MyDB(this);
+//        SQLiteDatabase db = myDB1.getWritableDatabase();
+//
+//        db.execSQL("insert into student values('Salim',22);");
+//
+//        ContentValues contentValues = new ContentValues();
+//        contentValues.put("name","salim");
+//        contentValues.put("age",22);
+//
+//        db.insert("student",null,contentValues);
+//
+//
+
+
         getStudentData();
 
         addButton.setOnClickListener(new View.OnClickListener() {
