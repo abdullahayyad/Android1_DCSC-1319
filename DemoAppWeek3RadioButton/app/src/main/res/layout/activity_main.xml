@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radio_group_gender"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+
+            />
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/check_java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+
+            />
+
+        <CheckBox
+            android:id="@+id/check_php"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="php"
+
+            />
+
+        <CheckBox
+            android:id="@+id/check_kotlin"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kotlin"
+
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

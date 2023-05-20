@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#EEE"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@android:drawable/ic_menu_help"
+
+        />
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_marginTop="32dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+
+        android:hint="username"/>
+
+    <EditText
+        android:layout_marginTop="16dp"
+        android:id="@+id/edit_password"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="32dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"/>
+    <CheckBox
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="32dp"
+        android:id="@+id/check_is_save"
+        android:layout_width="wrap_content"
+        android:layout_gravity="start"
+        android:layout_height="wrap_content"
+        android:text="Save Login Session"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+
+</LinearLayout>

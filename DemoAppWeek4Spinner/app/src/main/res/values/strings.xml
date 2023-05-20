@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Demo App Week 4 - Spinner</string>
+
+
+    <string-array name="languages">
+        <item>C#</item>
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Dart</item>
+        <item>Swift</item>
+        <item>Objective C</item>
+    </string-array>
+</resources>

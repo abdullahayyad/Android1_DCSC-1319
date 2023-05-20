@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/img_background"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="@color/teal_200"
+
+                android:src="@android:drawable/ic_menu_mapmode" />
+
+            <ImageView
+                android:id="@+id/img_background1"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="@color/teal_200"
+
+                android:src="@android:drawable/ic_menu_mapmode" />
+
+            <ImageView
+                android:id="@+id/img_background2"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="@color/teal_200"
+
+                android:src="@android:drawable/ic_menu_mapmode" />
+
+            <ImageView
+                android:id="@+id/img_background3"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="@color/teal_200"
+
+                android:src="@android:drawable/ic_menu_mapmode" />
+
+            <ImageView
+                android:id="@+id/img_background4"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:background="@color/teal_200"
+                android:src="@android:drawable/ic_menu_mapmode" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</LinearLayout>
