@@ -37,7 +37,7 @@ public class MessageDetailsActivity extends AppCompatActivity {
 
         cursor.moveToFirst();
         while (!cursor.isAfterLast()){
-            @SuppressLint("Range") String message = cursor.getString(cursor.getColumnIndex("msg"));
+           String message = cursor.getString(cursor.getColumnIndex("msg"));
 
             adapter.add(message);
             Log.e("message",message);
