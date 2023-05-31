@@ -10,12 +10,13 @@
         android:id="@+id/edit_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Name"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/img_profile" />
 
     <EditText
         android:id="@+id/edit_age"
@@ -37,13 +38,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_age" />
 
-    <ListView
-        android:id="@+id/listview"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
         android:layout_width="395dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_insert" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_insert"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#aaa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

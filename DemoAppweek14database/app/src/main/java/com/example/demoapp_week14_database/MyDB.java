@@ -16,7 +16,7 @@ public class MyDB extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL("Create table student(id INTEGER primary key autoincrement," +
-                " name TEXT not null,age INTEGER,username TEXT unique not null,password TEXT not null);");
+                " name TEXT not null,age INTEGER,avatar blob);");
 
     }
 
@@ -28,12 +28,13 @@ public class MyDB extends SQLiteOpenHelper {
 
 
 
-    boolean insertStudent(String name,int age){
+    boolean insertStudent(String name,int age,byte[] avatar){
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
 //        sqLiteDatabase.execSQL("Insert Into student(age,name) values ("+age+",'"+name+"');");
         ContentValues contentValues =new ContentValues();
         contentValues.put("age",age);
         contentValues.put("name",name);
+        contentValues.put("avatar",avatar);
         long result = sqLiteDatabase.insert("student",null,contentValues);
 
         sqLiteDatabase.close();
